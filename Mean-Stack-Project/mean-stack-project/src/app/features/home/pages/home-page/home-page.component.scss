@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Mobile First
+
+
+.main-section {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-inline:2rem;
+    
+    .landing-text {
+        // width: 50%;
+        // margin-top: 3rem;
+        padding-inline: 1rem;
+
+    }
+    .landing-img-container {
+        width: 60%;
+    }
+}
+
+
+.landing-img-container {
+    height: 20rem;
+    display: none;
+    // background-color: grey;
+    
+    .landing-img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        padding-left:4rem;
+    }
+}
+
+//Tablet
+@media (min-width: 768px) {
+    .landing-img-container {
+        display: block;
+    }
+    .landing-text {
+        max-width: 40%;
+        margin-top: 3rem;
+    }
+}
+
+//Dell Notebook
+@media (min-width: 1000px) {
+    .content {
+        width: 90%;
+        margin: auto;
+    }
+
+}
+

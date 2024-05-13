@@ -1,0 +1,14 @@
+<section class="content">
+    <div class="logo-container">
+        <img src="../../../../assets/textnet-logo.jpg" alt="" class="logo-img">
+    </div>
+    <navbar class="navbar"></navbar>
+
+    <div class="burguer-menu-container">
+        <img class="burguer-menu" (click)="toggleMenu()" src="../../../../assets/burguer-menu.png" alt="">
+    </div>
+
+</section>
+<div class="white-background"  *ngIf="menuOpened" >
+    <navbar class="mobile-navbar" *ngIf="menuOpened" [isMobile]="true"></navbar>
+</div>

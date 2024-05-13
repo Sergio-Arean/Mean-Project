@@ -1,0 +1,11 @@
+
+
+<section class="content">
+    <ul class="items-container" [class.items-container-mobile]="isMobile">
+        <li class="item"><a href="" class="item-link"><span class="title">Home</span></a></li>
+        <li class="item"><a href="" class="item-link"><span class="title">Articles</span></a></li>
+        <li class="item"><a href="" class="item-link"><span class="title">About Us</span></a></li>
+        <li class="item"><a href="" class="item-link"><span class="title">Contact</span></a></li>
+        <li class="item" [class.last-nav-option]="!isMobile"><a href="www.google.com" ><span class="title">Sign In</span></a></li>
+    </ul>
+</section>

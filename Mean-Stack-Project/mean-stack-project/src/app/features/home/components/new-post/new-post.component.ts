@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Post } from '../../model/post.model';
-import { PostService } from '../../services/post.service';
+import { PostService } from '../../../../core/services/post.service';
+import { Post } from '../../../../core/model/post.model';
 
 @Component({
   selector: 'new-post',
