@@ -9,6 +9,7 @@ import { Post } from '../../../../core/model/post.model';
 })
 export class ArticlesPageComponent implements OnInit{
   posts:Post[] = [];
+  loading: boolean = true;
 
   constructor(private postService:PostService){}
 
@@ -21,6 +22,7 @@ export class ArticlesPageComponent implements OnInit{
     this.postService.getUpdatedPosts().subscribe(updatedPosts=> {
       this.posts = updatedPosts;
       console.log('Posts!', this.posts);
+      this.loading = false;
     });
   }
    
