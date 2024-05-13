@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './home-page.component.scss'
 })
 export class HomePageComponent {
-openMenu:boolean = false;
 
-  handleMenu(openMenu:boolean): void {
-    this.openMenu = openMenu;
-  }
 }

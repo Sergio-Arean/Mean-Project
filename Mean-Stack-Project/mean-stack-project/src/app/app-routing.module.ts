@@ -6,7 +6,7 @@ import { ArticlesPageComponent } from './features/articles/pages/articles-page/a
 const routes: Routes = [
   { path: 'home', component: HomePageComponent }, 
   { path: 'articles', component: ArticlesPageComponent },
-  // { path: '**', redirectTo: 'home' }
+  { path: '**', redirectTo: 'home' }
 ];
 
 @NgModule({
