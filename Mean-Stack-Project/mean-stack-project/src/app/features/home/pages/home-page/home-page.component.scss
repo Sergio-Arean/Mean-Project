@@ -8,6 +8,7 @@
 
 
 .main-section {
+    animation: fadeIn 2s ease-in-out forwards;
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
@@ -15,8 +16,6 @@
     padding-inline:2rem;
     
     .landing-text {
-        // width: 50%;
-        // margin-top: 3rem;
         padding-inline: 1rem;
 
     }
@@ -29,7 +28,6 @@
 .landing-img-container {
     height: 20rem;
     display: none;
-    // background-color: grey;
     
     .landing-img {
         height: 100%;
@@ -38,6 +36,16 @@
         padding-left:4rem;
     }
 }
+
+//keyframes
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 //Tablet
 @media (min-width: 768px) {

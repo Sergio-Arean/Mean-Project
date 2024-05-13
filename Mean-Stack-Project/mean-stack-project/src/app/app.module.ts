@@ -11,6 +11,8 @@ import { HomePageComponent } from './features/home/pages/home-page/home-page.com
 import { HeaderComponent } from './shared/components/header/header.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { LandingPresentationComponent } from './features/home/components/landing-presentation/landing-presentation.component';
+import { ArticleCardComponent } from './features/articles/components/article-card/article-card.component';
+import { ArticlesPageComponent } from './features/articles/pages/articles-page/articles-page.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { LandingPresentationComponent } from './features/home/components/landing
     HomePageComponent,
     HeaderComponent,
     NavbarComponent,
-    LandingPresentationComponent
+    LandingPresentationComponent,
+    ArticleCardComponent,
+    ArticlesPageComponent
   ],
   imports: [
     BrowserModule,
