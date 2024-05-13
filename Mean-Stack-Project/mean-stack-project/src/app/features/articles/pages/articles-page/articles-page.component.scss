@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.content {
+    animation: fadeIn 2s ease-in-out forwards;
+    padding: .2rem;
+
+    .title-container {
+        margin-top:1rem;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+            margin-right: 2rem;
+            font-size: 30px;
+        }
+
+        .subtitle {
+            font-size:14px;
+        }
+    }
+
+    .articles-list {
+        animation: fadeIn 2s ease-in-out forwards;
+        display:flex;
+        flex-direction: column;
+        margin-top:1rem;
+    }
+}
+
+//keyframes
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+
+//Tablet 
+@media (min-width:768px) {
+        .articles-list {
+            align-items: center;
+        }
+    
+}
+
+
+//Dell Laptop
+@media (min-width:1000px) {
+    .content {
+        width: 80%;
+        margin:auto;
+
+        .title-container {
+            margin-top: 3.5rem;
+            flex-direction: row;
+            align-items: center;
+            width: 55%;
+        }
+
+        .articles-list {
+            // background-color: grey;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top:3rem;
+        }
+    }
+}

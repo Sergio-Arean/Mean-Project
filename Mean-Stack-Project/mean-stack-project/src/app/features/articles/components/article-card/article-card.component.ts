@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Post } from '../../../../core/model/post.model';
 
 @Component({
   selector: 'article-card',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './article-card.component.scss'
 })
 export class ArticleCardComponent {
-
+@Input({
+  required: true
+}) post!:Post;
 }

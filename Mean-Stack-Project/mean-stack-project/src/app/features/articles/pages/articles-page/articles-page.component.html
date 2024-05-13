@@ -1,1 +1,12 @@
-<p>articles-page works!</p>
+<section class="content">
+    <div class="title-container">
+        <h1 class="title">Articles</h1>
+        <p class="subtitle">Discover fresh perspectives in our curated collection of articles. Dive into knowledge and innovation.</p>
+    </div>
+
+    <section class="articles-list">
+        <ng-container *ngFor="let post of posts ">
+            <article-card [post]="post"></article-card>
+        </ng-container>
+    </section>
+</section>

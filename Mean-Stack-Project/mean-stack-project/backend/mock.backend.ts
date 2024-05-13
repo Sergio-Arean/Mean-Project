@@ -1,19 +1,48 @@
 import { Post } from "../src/app/core/model/post.model";
 
 export const mockPosts:Post[] = [
-    {
-        id: '1st ID',
-        title: '1st Mock Post',
-        content: '1st Mock Content'
-    },
+    // {
+    //     id: '1st ID',
+    //     title: 'Search engine optimization',
+    //     content: '1st Mock Content',
+    //     urlPhoto: '../../../../../assets/random-img-example.jpg'
+    // },
     {
         id: '2nd ID',
-        title: '2nd Mock Post',
-        content: '2nd Mock Content'
+        title: 'Laaaaaaarge Content',
+        content: '2nd Mock Content',
+        urlPhoto: 'https://fastly.picsum.photos/id/520/200/200.jpg?hmac=gq6GVKg64GMqsvk_d6gzXZ7L1htska1jEdgBnAwm4xU',
     },
     {
         id: '3rd ID',
-        title: '3rd Mock Post',
-        content: '3rd Mock Content'
-    }        
+        title: 'Let´s swim together',
+        content: '3rd Mock Content',
+        urlPhoto: 'https://fastly.picsum.photos/id/841/200/200.jpg?hmac=jAPzaXgN_B37gVuIQvmtuRCmYEC0lJP86OZexH1yam4'
+    },
+    {
+        id: '4th ID',
+        title: 'Welcome to the Jungle',
+        content: '3rd Mock Content',
+        urlPhoto: 'https://fastly.picsum.photos/id/109/200/200.jpg?hmac=vqAWt9QCvOo67gp7N7_-QeMlU5k0G47VIWM_B8Js-ww'
+    },
+    {
+        id: '5th ID',
+        title: 'An interesting perspective of life',
+        content: '5th content',
+        urlPhoto: 'https://fastly.picsum.photos/id/952/200/200.jpg?hmac=6jMF0yOT214qb0hW6aUyexMo9flTRxyQbV8jYPcVolM',
+    },
+    {
+        id: '6th ID',
+        title: 'Home by the Sea',
+        content: '5th content',
+        urlPhoto: 'https://fastly.picsum.photos/id/986/200/200.jpg?hmac=Rqj6CXpaNxwumR7JjJGP9zm2AX92QkYPfNgufdAlpkY'
+
+    }  ,
+    {
+        id: '7th ID',
+        title: 'Studying yourself',
+        content: '5th content',
+        urlPhoto: 'https://fastly.picsum.photos/id/20/800/800.jpg?hmac=sH0rrI15LYL1gL5Kk-CtGwe5SrAPimAS-ZQyFajNzVk'
+
+    }  
 ]
