@@ -4,11 +4,22 @@
     box-sizing: border-box;
 }
 
+.content {
+    min-height: 100%;
+    display: flex;
+    flex-direction:column;
+}
+
+.main-section {
+    flex:1;
+}
+
 
 @media (min-width: 1000px) {
     .header-container {
         width: 90%;
         margin: auto;
+
     }
 
 }

@@ -26,6 +26,8 @@
     display:block;
     position: relative;
     z-index: 200;
+
+
 }
 
 .content {
@@ -49,13 +51,16 @@
 //handling modal menu
 .white-background {
     position: fixed;
-    top: 1;
+    top: 10;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 1); 
     z-index: 100;
+
 }
+
+
 
 //Dell Laptop
 @media (min-width: 1000px) {
