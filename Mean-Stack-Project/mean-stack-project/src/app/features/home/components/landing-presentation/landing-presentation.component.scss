@@ -30,6 +30,10 @@
         color:#FFFFFF;
         font-size: 16px;
         font-weight: 400;
+
+        animation-name: moveInLeft;
+        animation-duration: 1.5s;
+
         &:hover {
             cursor:pointer;
         }
@@ -38,4 +42,33 @@
 }
 
 
+//keyframes
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
 
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@media (min-width:1000px) {
+    .text-section {
+        .title {
+            font-size: 40px;
+            // display: none;
+        }
+
+        .description {
+            font-size: 17px;
+        }
+    }
+}

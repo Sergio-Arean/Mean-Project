@@ -12,6 +12,8 @@
     flex-direction: row;
     justify-content: center;
     padding-inline:2rem;
+
+    // background-color: yellow;
     
     .landing-text {
         padding-inline: 1rem;
@@ -24,14 +26,18 @@
 
 
 .landing-img-container {
-    height: 20rem;
+    margin-top:-1rem;
+    height: 30rem;
     display: none;
-    
+    animation-name: enterFromRight;
+    animation-duration: 2s;
+
     .landing-img {
         height: 100%;
         width: 100%;
         object-fit: contain;
         padding-left:4rem;
+        display: block;
     }
 }
 //keyframes
@@ -43,6 +49,23 @@
       opacity: 1;
     }
   }
+
+
+@keyframes enterFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    50% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
 
 //Tablet
 @media (min-width: 768px) {
@@ -60,7 +83,21 @@
     .content {
         width: 90%;
         margin: auto;
+
+        .main-section {
+
+            .landing-text {
+                margin-top: 4rem;
+            }
+        }
     }
 
+}
+
+//Medium Laptop
+@media (min-width: 1366px) {
+    .content {
+        margin-top: 5rem;
+    }
 }
 

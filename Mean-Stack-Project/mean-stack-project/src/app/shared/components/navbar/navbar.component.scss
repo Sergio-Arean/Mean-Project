@@ -22,20 +22,26 @@
         padding-inline: 1.3rem;
         padding-block: 1.2rem;
 
-        &.last-nav-option .item-link {
-            color:red;
-            &:hover{
-                color:#FFFFFF;
-            }
-        }
+        // &.last-nav-option .item-link {
+        //     color:red;
+        //     &:hover{
+        //         color:#FFFFFF;
+        //     }
+        // }
 
         .item-link {
+            display:block;
+            transition: all .2s;
             text-decoration: none;
             color: #1F1F1F;
             font-size: 18px;
             &:hover {
                 cursor:pointer;
-                text-decoration: underline;
+                // background-color: greenyellow;
+                transform: translateY(-2px);
+            }
+            &:active {
+                transform: translateY(-1px);
             }
 
         }
@@ -71,12 +77,4 @@
             }
         }
        
-}
-
-
-//Tablet
-@media (min-width:768px) {
-    .item {
-        // font-size: 13px;
-    }
 }
