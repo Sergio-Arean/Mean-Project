@@ -14,6 +14,7 @@ import { LandingPresentationComponent } from './features/home/components/landing
 import { ArticleCardComponent } from './features/articles/components/article-card/article-card.component';
 import { ArticlesPageComponent } from './features/articles/pages/articles-page/articles-page.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
+import { SocialMediaLinksComponent } from './shared/components/social-media-links/social-media-links.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
     LandingPresentationComponent,
     ArticleCardComponent,
     ArticlesPageComponent,
-    FooterComponent
+    FooterComponent,
+    SocialMediaLinksComponent
   ],
   imports: [
     BrowserModule,
