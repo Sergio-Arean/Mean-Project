@@ -22,13 +22,6 @@
         padding-inline: 1.3rem;
         padding-block: 1.2rem;
 
-        // &.last-nav-option .item-link {
-        //     color:red;
-        //     &:hover{
-        //         color:#FFFFFF;
-        //     }
-        // }
-
         .item-link {
             display:block;
             transition: all .2s;
@@ -37,7 +30,6 @@
             font-size: 18px;
             &:hover {
                 cursor:pointer;
-                // background-color: greenyellow;
                 transform: translateY(-2px);
             }
             &:active {
@@ -73,6 +65,7 @@
             cursor:pointer;
 
             .title {
+                background-color: #1F1F1F;
                 color:#FFFFFF;
             }
         }

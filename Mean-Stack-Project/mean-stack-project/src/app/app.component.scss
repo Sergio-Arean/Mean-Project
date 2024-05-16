@@ -13,21 +13,17 @@
         position: fixed;
         width: 100%;
         z-index: 1000;
-
-        // &::after {
-        //         content: "";
-        //         display: block;
-        //         height: 3px; 
-        //         background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)); /* Gradiente que se desvanece */
-        //         width: 100%;
-        // }
     }
+
+    .main-section {
+        flex:1;
+        margin-top: 3rem;
+        
+    }
+
 }
 
-.main-section {
-    flex:1;
-    margin-top: 3rem;
-}
+
 
 
 @media (min-width: 1000px) {
@@ -37,4 +33,11 @@
 
     }
 
+}
+
+//Bigger Screens
+@media (min-width: 1920px) {
+    .main-section {
+        margin-bottom: 5rem;
+    }
 }
