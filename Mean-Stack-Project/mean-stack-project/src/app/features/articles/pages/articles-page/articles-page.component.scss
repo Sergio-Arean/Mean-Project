@@ -5,7 +5,10 @@
 }
 
 .content {
+  // background-color: red;
     animation: fadeIn 2s ease-in-out forwards;
+    margin-top:1rem;
+    margin-bottom: 2rem;
     padding: .2rem;
 
     .title-container {
@@ -68,7 +71,8 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border-left-color:rgba(255, 255, 255, 0.8); 
+    // border-left-color:rgba(255, 255, 255, 0.8); 
+    border-left-color: #F8F7F4;
     animation: spin 1s infinite linear;
   }
   
@@ -97,6 +101,7 @@
     .content {
         width: 80%;
         margin:auto;
+        margin-bottom: 2rem;
 
         .title-container {
             margin-top: 3.5rem;
