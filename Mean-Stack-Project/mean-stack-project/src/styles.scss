@@ -1,6 +1,8 @@
+@import 'quill/dist/quill.core.css';
+@import 'quill/dist/quill.snow.css';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 /* light green : #E1FAEE
 dark green: #5AE4A7 */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     // font-family: "Roboto Mono", monospace;
     font-family: "Raleway", sans-serif;
@@ -8,7 +10,6 @@ dark green: #5AE4A7 */
     padding: 0;
     box-sizing: border-box;
     // background-color:#F8F7F4;
-    // background-color: violet;
 }
 
 html, body {

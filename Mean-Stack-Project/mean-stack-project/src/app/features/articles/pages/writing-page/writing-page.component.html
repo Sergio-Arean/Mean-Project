@@ -1,0 +1,9 @@
+<section class="content">
+    <quill-editor 
+        class="text-editor" 
+        #textEditor
+        (onContentChanged)="onEditorContentChanged($event)"></quill-editor>
+    <button (click)="sendContent()">Send</button>
+</section>
+
+<!-- <div [innerHTML]="editorContent"></div> -->

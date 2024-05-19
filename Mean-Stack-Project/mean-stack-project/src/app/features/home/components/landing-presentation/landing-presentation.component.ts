@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'landing-presentation',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrl: './landing-presentation.component.scss'
 })
 export class LandingPresentationComponent {
+
+  constructor(private router: Router){}
+
+  redirecToWritingPage(): void {
+    this.router.navigate(['/start-writing']);
+  }
 
 }

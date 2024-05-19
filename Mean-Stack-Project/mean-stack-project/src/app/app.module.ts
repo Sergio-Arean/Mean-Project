@@ -16,6 +16,8 @@ import { ArticlesPageComponent } from './features/articles/pages/articles-page/a
 import { FooterComponent } from './shared/components/footer/footer.component';
 import { SocialMediaLinksComponent } from './shared/components/social-media-links/social-media-links.component';
 
+import {QuillModule} from 'ngx-quill';
+import { WritingPageComponent } from './features/articles/pages/writing-page/writing-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,13 +30,15 @@ import { SocialMediaLinksComponent } from './shared/components/social-media-link
     ArticleCardComponent,
     ArticlesPageComponent,
     FooterComponent,
-    SocialMediaLinksComponent
+    SocialMediaLinksComponent,
+    WritingPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    QuillModule
   ],
   providers: [],
   bootstrap: [AppComponent]
