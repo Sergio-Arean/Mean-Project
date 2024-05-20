@@ -1,11 +1,16 @@
 .card {
+    user-select: none;
     width: 23rem;
     perspective:150rem;
     -moz-perspective: 150rem;
-    transition: all .8s ease;
+    transition: all 1s ease;
 
 
     position: relative;
+
+    &:hover {
+        cursor: pointer;
+    }
     
     
     .card__side {

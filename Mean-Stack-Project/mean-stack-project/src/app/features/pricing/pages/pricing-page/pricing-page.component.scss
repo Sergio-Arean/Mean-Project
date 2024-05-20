@@ -1,8 +1,20 @@
 .content {
-    margin-top: 2rem;
-    border-radius: 5px;
+    margin-top: 6rem;
 
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+   .pricing-offers-list {
+    display: flex;
+    flex-direction: row;
+
+    .pricing-offers-list__item {
+        list-style: none;
+        margin-inline: 1rem;
+     }
+   }
 
 }
 

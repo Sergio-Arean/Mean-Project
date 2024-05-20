@@ -1,5 +1,8 @@
 import { Post } from "../src/app/core/model/post.model";
+import { PricingOffer } from "../src/app/core/model/pricing-offer.model";
 
+
+//Posts/Articles
 export const mockPosts:Post[] = [
     // {
     //     id: '1st ID',
@@ -45,4 +48,27 @@ export const mockPosts:Post[] = [
         urlPhoto: 'https://fastly.picsum.photos/id/20/800/800.jpg?hmac=sH0rrI15LYL1gL5Kk-CtGwe5SrAPimAS-ZQyFajNzVk'
 
     }  
-]
+];
+
+
+//Pricing Offers
+export const mockPricingOffers:PricingOffer[] = [
+{
+    title: 'Free Plan: Basic Access',
+    featuresList : ['Create and Share Posts','Read Community Content', 'Basic Analytics'],
+    price: 'Free',
+    sloganPrice: 'Just sign up & start!'
+},
+{
+    title: 'Standard Plan: Pro Writer',
+    featuresList : ['Everything in Basic Access','Advanced Publishing Tools', 'Enhanced Analytics', 'Ad-Free Experience'],
+    price: '$9.99/month',
+    sloganPrice: 'Elevate your writing game!'
+},
+{
+    title: 'Premium Plan: Elite Contributor',
+    featuresList : ['All Pro Writer Benefits','Personalized Branding Options', 'Priority Support','Exclusive Community Access'],
+    price: '$19.99/month',
+    sloganPrice: 'Unlock the full potential!'
+}
+];
