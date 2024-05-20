@@ -18,6 +18,8 @@ import { SocialMediaLinksComponent } from './shared/components/social-media-link
 
 import {QuillModule} from 'ngx-quill';
 import { WritingPageComponent } from './features/articles/pages/writing-page/writing-page.component';
+import { PricingPageComponent } from './features/pricing/pages/pricing-page/pricing-page.component';
+import { PricingOfferCardComponent } from './features/pricing/components/pricing-offer-card/pricing-offer-card.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +33,9 @@ import { WritingPageComponent } from './features/articles/pages/writing-page/wri
     ArticlesPageComponent,
     FooterComponent,
     SocialMediaLinksComponent,
-    WritingPageComponent
+    WritingPageComponent,
+    PricingPageComponent,
+    PricingOfferCardComponent
   ],
   imports: [
     BrowserModule,
