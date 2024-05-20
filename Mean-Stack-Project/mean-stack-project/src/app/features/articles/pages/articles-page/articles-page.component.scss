@@ -34,9 +34,6 @@
 
         .card {
           transition: transform 0.2s ease-in-out;
-          &:hover {
-            transform: scale(1.05);
-          }
         }
     }
 }
@@ -91,6 +88,12 @@
 @media (min-width:768px) {
         .articles-list {
             align-items: center;
+
+            .card{
+              &:hover {
+                transform: scale(1.05);
+              }
+            }
         }
     
 }
@@ -117,6 +120,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
             margin-top:3rem;
+
         }
     }
 }

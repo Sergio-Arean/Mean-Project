@@ -13,4 +13,8 @@ menuOpened:boolean = false;
   toggleMenu(): void {
     this.menuOpened = !this.menuOpened;
   }
+
+  closeMenu(): void {
+    this.menuOpened = false;
+  }
 }
