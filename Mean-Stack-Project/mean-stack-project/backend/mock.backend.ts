@@ -57,18 +57,21 @@ export const mockPricingOffers:PricingOffer[] = [
     title: 'Free Plan: Basic Access',
     featuresList : ['Create and Share Posts','Read Community Content', 'Basic Analytics'],
     price: 'Free',
-    sloganPrice: 'Just sign up & start!'
+    sloganPrice: 'Just sign up & start!',
+    type: 'free'
 },
 {
     title: 'Standard Plan: Pro Writer',
     featuresList : ['Everything in Basic Access','Advanced Publishing Tools', 'Enhanced Analytics', 'Ad-Free Experience'],
     price: '$9.99/month',
-    sloganPrice: 'Elevate your writing game!'
+    sloganPrice: 'Elevate your writing game!',
+    type: 'standard'
 },
 {
     title: 'Premium Plan: Elite Contributor',
     featuresList : ['All Pro Writer Benefits','Personalized Branding Options', 'Priority Support','Exclusive Community Access'],
     price: '$19.99/month',
-    sloganPrice: 'Unlock the full potential!'
+    sloganPrice: '🚀Unlock the full potential!',
+    type: 'premium'
 }
 ];

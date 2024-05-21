@@ -59,8 +59,9 @@
 
     .back-content {
         background-color: black;
-        color: white;
+        color: black;
         justify-content: center;
+        border: 1px solid #56E5AB;
         
         transform: rotateY(180deg);
 
@@ -68,6 +69,35 @@
             padding:.5rem;
         }
     }
+
+    //
+    .free-plan {
+        background-image: linear-gradient(135deg, #F8F7F4 0%, #E1FAEE 100%);
+    }
+
+    .standard-plan {
+        background-image: linear-gradient(135deg, #E1FAEE 0%, #56E5AB 100%)
+
+    }
+
+    .premium-plan {
+        background-image: linear-gradient(135deg, #56E5AB 0%, #34C89A 100%);
+
+    }
+
+    .free-price-bg {
+        background-color: #F8F7F4;
+    }
+
+    .standard-price-bg {
+        background-color: #A8E5C2;
+    }
+
+    .premium-price-bg {
+        background-color: #56E5AB;
+    }
+
+
 
 
     &:hover .front-content {

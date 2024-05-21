@@ -16,14 +16,14 @@
 </div> -->
 
 <div class="card">
-    <div class="card__side front-content">
+    <div class="card__side front-content" [ngClass]="frontStyles()">
         <h2 class="title">{{pricingOffer.title}}</h2>
         <ul class="features-list">
             <li class="features-list__item" *ngFor="let feature of pricingOffer.featuresList">✔️ {{feature}}</li>
         </ul>
     </div>
 
-    <div class="card__side back-content">
+    <div class="card__side back-content" [ngClass]="backStyles()">
         <h2 class="pricing-title">{{pricingOffer.price}}</h2>
         <p>{{pricingOffer.sloganPrice}}</p>
     </div>
