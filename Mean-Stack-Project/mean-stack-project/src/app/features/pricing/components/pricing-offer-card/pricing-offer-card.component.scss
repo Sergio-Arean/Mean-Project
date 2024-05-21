@@ -1,8 +1,12 @@
 .card {
     user-select: none;
-    width: 23rem;
+    width: 17rem;
     perspective:150rem;
     -moz-perspective: 150rem;
+
+    
+
+
     transition: all 1s ease;
 
 
@@ -15,17 +19,17 @@
     
     .card__side {
         transition: all .8s;
-        // background-color: violet;
-
 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
         
         backface-visibility: hidden;
 
-        height: 15rem;
+        height: 19rem;
+
+        border-radius:10px;
 
 
         
@@ -34,22 +38,35 @@
         left: 0;
         width: 100%;
 
+        .title {
+            text-align: center;
+            padding: 2rem;
+        }
+
         .features-list {
             &__item {
                 margin-block: .4rem;
+                list-style-type: none;
+                font-size: .9rem;
             }
         }
     }
 
     .front-content {
         background-image:  linear-gradient(to bottom right, #5DE2AA, #E1FAEE);
+
     }
 
     .back-content {
         background-color: black;
         color: white;
-
+        justify-content: center;
+        
         transform: rotateY(180deg);
+
+        .pricing-title {
+            padding:.5rem;
+        }
     }
 
 

@@ -1,4 +1,7 @@
 .content {
+  background-color: grey;
+  width: 100%;
+  
     margin-top: 6rem;
 
     display: flex;
@@ -8,16 +11,29 @@
 
    .pricing-offers-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    position: relative;
 
     .pricing-offers-list__item {
         list-style: none;
         margin-inline: 1rem;
+
+        .offer-card {
+          
+        }
      }
    }
 
 }
 
 
+//D Laptop
+@media (min-width: 1000px) {
 
-
+  .content {
+    .pricing-offers-list {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
