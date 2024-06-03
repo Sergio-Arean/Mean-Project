@@ -11,6 +11,12 @@ export class PricingOfferCardComponent {
     required: true
   }) pricingOffer!:PricingOffer;
 
+  logFeatures(): void {
+    console.log('Hi, I am a card component of type ' + this.pricingOffer.type);
+  }
+
+
+
 
   frontStyles() : string {
     let rta:string = '';
