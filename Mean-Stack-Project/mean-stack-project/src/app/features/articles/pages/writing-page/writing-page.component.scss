@@ -2,9 +2,35 @@
     margin-top: 3rem;
 
     width: 80%;
+    // margin-bottom: 2rem;
     margin-inline: auto;
+
+
+
+
 
     .text-editor {
         height: 15rem;
     }
+
+    .btn-container{
+        display:flex;
+        justify-content: flex-end;
+
+        .send-btn {
+            width: 30%;
+            margin-block: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 0;
+            transition:all .2s;
+    
+            &:hover {
+                cursor:pointer;
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+
 }

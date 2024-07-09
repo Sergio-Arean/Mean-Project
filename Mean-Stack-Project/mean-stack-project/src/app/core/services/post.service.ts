@@ -14,6 +14,13 @@ export class PostService {
 
   constructor(private http: HttpClient) { }
 
+
+  //Provisional Local Backend
+  postArticle(): void {
+    
+  }
+
+
   //GET
   getPosts() {
     this.http.get<{ message: string, posts: any }>('http://localhost:3000/api/posts')
